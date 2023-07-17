@@ -1,0 +1,170 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>..:: Aritmatik İşlemler ::..</title>
+<style type="text/css">
+	.dugme{
+		background-color:#0099FF;
+		color:#FFFFFF;
+		width:600px;
+		height:40px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		box-shadow:3px 3px 3px #333;
+	}
+	.esittir{
+		background-color:#FF0000;
+		color:#FFFFFF;
+		width:40px;
+		height:35px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		display:block;
+		text-align:center;
+		padding-top:5px;
+	}
+	.girisKutusu{
+		background-color:#FFFFCC;
+		color:#333;
+		width:150px;
+		height:40px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		box-shadow:3px 3px 3px #333;
+		text-align:center;
+	}
+	.sonucKutusu{
+		background-color:#999999;
+		color:#FFFF99;
+		width:150px;
+		height:40px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		box-shadow:3px 3px 3px #333;
+		text-align:center;
+	}
+.girisKutusu1 {		background-color:#FFFFCC;
+		color:#333;
+		width:150px;
+		height:40px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		box-shadow:3px 3px 3px #333;
+}
+.dugme1 {		background-color:#0099FF;
+		color:#FFFFFF;
+		width:40px;
+		height:40px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+		box-shadow:3px 3px 3px #333;
+}
+.hesaplanmis{
+    
+    width:100px;
+    background-color:grenn;
+    color:White;
+    
+    
+    
+    }
+    .style1
+    {
+        height: 22px;
+        font-size: 30;
+    }
+    .style2
+    {
+        width: 400px;
+        font-size:30;
+    }
+    
+    .style4
+    {
+        width: 400px;
+        font-size: 30;
+        height: 22px;
+    }
+    </style>
+<script language="javascript" type="text/javascript">
+	
+    function hesapla() {
+    
+        var sayi1= parseInt (anaPara.value);
+        var sayi2 = parseInt(faizOrani.value);
+        var sayi3 = parseInt(sure.value);
+        var sonuc=(sayi1*sayi2*sayi3)/1200;
+        hesaplanmis.innerHTML=sonuc;
+    
+    }
+	
+   
+        
+
+
+</script>
+</head>
+<body>
+<table height="100%" width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle">
+    
+    <!--aritmatik islemler tablosu burada basliyor -->
+    <table width="540" cellspacing="0" cellpadding="0" border="2" >
+
+
+      <tr>
+
+        <td collspa align="center" valign="middle" class="style1">
+          	ANA PARA
+        </td>
+        <td align="center" valign="middle" class="style4">
+          	FAİZ ORANI
+ 	   </td>
+        <td align="center" valign="middle" class="style1">
+       	  SÜRE (AY OLARAK)
+          </td>
+
+        
+      </tr>
+
+
+
+      <tr>
+
+        <td align="center" valign="middle">
+          	<input type="text" id="anaPara" class="girisKutusu"  value="0" onclick="return Text1_onclick()">
+        </td>
+        <td align="center" valign="middle" class="style2">
+          	<input type="text" id="faizOrani" class="girisKutusu"  value="0" onclick="return Text1_onclick()">
+ 	   </td>
+        <td align="center" valign="middle">
+
+        
+          	<input type="text" id="sure" class="girisKutusu"  value="0" 
+                onclick="return Text1_onclick()"></tr>
+
+
+      <tr>
+
+        
+        <td  colspan="3" align="center" valign="middle" class="style2">
+          	&nbsp;<input type="button" id="hesapla" value="HESAPLA" class="dugme" onClick="hesapla()"></td>
+        
+ 
+       
+      </tr>
+
+	
+    <tr>
+    	<td colspan="5" id="hesaplanmis">
+        <!--Hatalar burada goruntulenecek -->
+        
+        </td>
+    </tr>
+    </table>
+    <!-- aritmatik islemler tablosu burada BITIYOR -->    </td>
+  </tr>
+</table>
+</body>
+</html>
